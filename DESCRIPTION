@@ -1,4 +1,4 @@
-Package: A custom color scheme for my data visualizations
+Package: BT.Theme
 Title: For use in my ggplot graphs
 Version: 0.0.0.1000
 Authors@R: 
