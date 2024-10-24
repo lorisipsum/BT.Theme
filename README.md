@@ -47,7 +47,7 @@ mtcars |> ggplot(aes(x = wt, y = disp)) +
   scale_fill_brian_c() + 
   labs(
     x = "Weight (wt)",
-    y = "Miles per Gallon (mpg)",
+    y = "Displacement (disp)",
     fill = "Density") +
   theme_bw()
 ```
@@ -67,14 +67,14 @@ ggplot(df, aes(var1, var2, fill = cor)) +
 
 Code adapted from: https://colorspace.r-forge.r-project.org/articles/ggplot2_color_scales.html
 ```
-![Sample image](Images/image_5.png)
+![Sample image](Images/image_6.png)
 
 #### Diverging Scale Color
 ```{r}
 mtcars |> ggplot(aes(disp, hp, color = scale(wt))) + geom_point() + scale_color_brian_diverging(reverse = TRUE) + 
   theme_bw() + guides(color=guide_legend(title="Scaled Car Weight"))
 ```
-![Sample image](Images/image_6.png)
+![Sample image](Images/image_5.png)
 
 
 ### General Reminders
