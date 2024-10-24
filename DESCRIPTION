@@ -1,0 +1,13 @@
+Package: A custom color scheme for my data visualizations
+Title: For use in my ggplot graphs
+Version: 0.0.0.1000
+Authors@R: 
+        person(given = "Brian", family = "Thompson", email = "dr.brianthompson1@gmail.com", role = c("aut", "cre"))
+Description: I am to use BT_Colors to ensure that all of my graphs and figures are made with a consistent color scheme. In other words, I do not want to have to remember hex codes :). Created by me (Brian) in the fall of 2024.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    ggplot2
+
