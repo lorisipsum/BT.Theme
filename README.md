@@ -64,6 +64,8 @@ ggplot(df, aes(var1, var2, fill = cor)) +
   ylab("variable") +
   scale_x_discrete(position = "top", name = "variable") +
   scale_fill_brian_diverging()
+
+Code adapted from: https://colorspace.r-forge.r-project.org/articles/ggplot2_color_scales.html
 ```
 ![Sample image](Images/image_5.png)
 
