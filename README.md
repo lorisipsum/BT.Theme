@@ -25,20 +25,20 @@ library(BT.theme)
 ```{r}
 mtcars |> ggplot(aes(disp, hp, color = factor(cyl))) + geom_point() + scale_color_brian_d() + theme_bw() + guides(color=guide_legend(title="# of Cylinders"))
 ```
-![Sample image](Images/image_1.pdf)
+![Sample image](Images/image_1.png)
 
 #### Continuous Scale Color
 ```{r}
 mtcars |> ggplot(aes(disp, hp, color = wt)) + geom_point() + scale_color_brian_c(color_palette = "Red") + theme_bw()
 ```
-![Sample image](Images/image_2.pdf)
+![Sample image](Images/image_2.png)
 
 #### Discrete Scale Fill
 ```{r}
 mtcars |> ggplot(aes(factor(cyl), hp, fill = factor(cyl))) + geom_bar(stat = "identity") + 
   scale_fill_brian_d() + theme_bw() + xlab("# of Cylinders") + guides(fill = guide_legend(title="# of Cylinders"))
 ```
-![Sample image](Images/image_3.pdf)
+![Sample image](Images/image_3.png)
 
 #### Continuous Scale Fill
 ```{r}
@@ -51,7 +51,7 @@ mtcars |> ggplot(aes(x = wt, y = disp)) +
     fill = "Density") +
   theme_bw()
 ```
-![Sample image](Images/image_4.pdf)
+![Sample image](Images/image_4.png)
 
 #### Diverging Scale Fill
 ```{r}
@@ -65,14 +65,14 @@ ggplot(df, aes(var1, var2, fill = cor)) +
   scale_x_discrete(position = "top", name = "variable") +
   scale_fill_brian_diverging()
 ```
-![Sample image](Images/image_5.pdf)
+![Sample image](Images/image_5.png)
 
 #### Diverging Scale Color
 ```{r}
 mtcars |> ggplot(aes(disp, hp, color = scale(wt))) + geom_point() + scale_color_brian_diverging(reverse = TRUE) + 
   theme_bw() + guides(color=guide_legend(title="Scaled Car Weight"))
 ```
-![Sample image](Images/image_6.pdf)
+![Sample image](Images/image_6.png)
 
 
 ### General Reminders
